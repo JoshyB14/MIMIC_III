@@ -1,5 +1,7 @@
 -- create table
 
+DROP TABLE IF EXISTS ADMISSIONS;
+
 CREATE TABLE ADMISSIONS(
     row_id INT,
     subject_id INT,
@@ -17,7 +19,7 @@ CREATE TABLE ADMISSIONS(
     ethnicity TEXT,
     edregtime TIMESTAMP,
     edouttime TIMESTAMP,
-    diagnosis TIMESTAMP,
+    diagnosis TEXT,
     hospital_expire_flag INT,
 	has_chartevents_data INT
 );
