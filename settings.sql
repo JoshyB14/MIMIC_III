@@ -57,21 +57,7 @@ ALTER SYSTEM SET
 ALTER SYSTEM SET 
  idle_session_timeout = '21600s'; --6hrs
 
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
--- Autovacuum settings
 
-ALTER SYSTEM SET 
- autovacuum_vacuum_threshold = 50; -- 50 rows changed before autovacuum runs
-
-ALTER SYSTEM SET 
- autovacuum_vacuum_scale_factor = 0; -- % of table that must be dead tuples
-
-ALTER SYSTEM SET 
- autovacuum_analyze_threshold = 50; -- 50 rows changed before analyse kicks in
-
-ALTER SYSTEM SET 
- autovacuum_analyze_scale_factor= 0; -- % of table that must have changed
 
 
 
