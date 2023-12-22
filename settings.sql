@@ -52,10 +52,10 @@ ALTER SYSTEM SET
 --------------------------------------------------------------------------------
 -- Timeout settings
 ALTER SYSTEM SET 
- idle_in_transaction_session_timeout = '900s'; -- 15 mins
+ idle_in_transaction_session_timeout = '3600s'; -- 1hr
 
 ALTER SYSTEM SET 
- idle_session_timeout = '3600s'; --1hr
+ idle_session_timeout = '21600s'; --6hrs
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
